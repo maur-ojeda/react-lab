@@ -1,12 +1,14 @@
 import { StrictMode } from "react";
 import ReactDOM from "react-dom";
 
-import App from "./App";
+import ClassComponent from "./components/ClassComponent";
+import FunctionalComponent from "./components/FunctionalComponent";
 
 const rootElement = document.getElementById("root");
 ReactDOM.render(
   <StrictMode>
-    <App />
+    <ClassComponent />
+    <FunctionalComponent />
   </StrictMode>,
   rootElement
 );
