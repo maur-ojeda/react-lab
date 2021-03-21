@@ -3,12 +3,23 @@ import ReactDOM from "react-dom";
 
 import ClassComponent from "./components/ClassComponent";
 import FunctionalComponent from "./components/FunctionalComponent";
+import FunctionProps from "./components/FunctionProps";
 
 const rootElement = document.getElementById("root");
 ReactDOM.render(
   <StrictMode>
-    <ClassComponent />
-    <FunctionalComponent />
+    {/*<FunctionalComponent />*/}
+
+    <FunctionProps name="Tony" heroName="Ironman">
+      <p>this children props</p>
+    </FunctionProps>
+    <FunctionProps name="Steve" heroName="Captain merica">
+      <button>Button</button>
+    </FunctionProps>
+
+    <ClassComponent name="Bruce" heroName="Hulk">
+      <p>class children props</p>
+    </ClassComponent>
   </StrictMode>,
   rootElement
 );
